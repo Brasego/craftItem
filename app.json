@@ -1,0 +1,15 @@
+{
+  "entry": "src/main.lua",
+  "files": [
+    "src/main.lua",
+    "src/loader.lua",
+    "src/utils.lua",
+    "src/items.lua",
+    "src/recipes.lua",
+    "src/craft.lua",
+    "app.json"
+  ],
+  "description": "Modular createItem app crafts items using PrismarineJS data tables that already reside on the computer.",
+  "version": "1.0.0",
+  "topics": ["Minecraft"]
+}
