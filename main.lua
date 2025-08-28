@@ -1,0 +1,1 @@
+io.write("Hello and welcome to craftItem, your tool to craft any item you want <3 Have a nice one !!!\n")
