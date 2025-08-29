@@ -5,8 +5,8 @@ local M = {}
 
 function M.loadData()
   -- These files already exist at the root of the computer.
-  local items   = utils.loadTable("/items.lua")
-  local recipes = utils.loadTable("/recipes.lua")
+  local items   = utils.loadTable("/data/items.lua")
+  local recipes = utils.loadTable("/data/recipes.lua")
   return items, recipes
 end
 
