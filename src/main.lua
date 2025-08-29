@@ -1,8 +1,8 @@
 -- main.lua – glue everything together
-local loader   = require "src.loader"
-local Items    = require "src.items"
-local Recipes  = require "src.recipes"
-local Craft    = require "src.craft"
+local loader   = require("src.loader")
+local Items    = require("src.items")
+local Recipes  = require("src.recipes")
+local Craft    = require("src.craft")
 
 local function main()
   print("=== Crafty Turtle – createItem (modular version) ===")
