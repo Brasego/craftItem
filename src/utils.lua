@@ -5,6 +5,7 @@ local utils = {}
 --- @param path string absolute path (e.g. "/data/items.lua")
 --- @return table
 function utils.loadTable(path)
+  print("Loading " .. path .. " ...") -- debug
   local f = io.open(path, "r")
   if not f then error("Cannot open " .. path) end
   local chunk = f:read("*a")
