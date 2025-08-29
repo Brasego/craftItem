@@ -1,5 +1,5 @@
 -- loader.lua – pulls the two big data tables from the *computer root*
-local utils = require "src.utils"
+local utils = require("apps.craftItem.utils")
 
 local M = {}
 
