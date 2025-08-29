@@ -1,5 +1,5 @@
 -- items.lua – helpers that operate on the items table
-local utils = require("apps.craftItem.utils")
+local utils = require("utils")
 
 local Items = {}
 Items.__index = Items

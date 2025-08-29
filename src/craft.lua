@@ -1,5 +1,5 @@
 -- craft.lua – checks inventory, prepares ingredients, runs turtle.craft()
-local utils = require("apps.craftItem.utils")
+local utils = require("utils")
 
 local Craft = {}
 Craft.__index = Craft
