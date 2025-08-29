@@ -2,10 +2,9 @@
 local utils = {}
 
 --- Load a Lua file that returns a table.
---- @param path string absolute path (e.g. "/items.lua")
+--- @param path string absolute path (e.g. "/data/items.lua")
 --- @return table
 function utils.loadTable(path)
-  shell.setPath("/")
   local f = io.open(path, "r")
   if not f then error("Cannot open " .. path) end
   local chunk = f:read("*a")
