@@ -9,7 +9,7 @@ function utils.loadTable(path)
   local f = io.open(path, "r")
   if not f then error("Cannot open " .. path) end
   local chunk = f:read("*a")
-  f:close()
+  -- f:close()
   local fn, err = load(chunk, "=" .. path)
   if not fn then error("Syntax error in " .. path .. ": " .. err) end
   return fn()
