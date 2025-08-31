@@ -11,9 +11,9 @@ function utils.loadTable(path)
   print(f)
   local chunk = f:read("a")
   f:close()
-  local fn, err = load(chunk, "=" .. path)
-  if not fn then error("Syntax error in " .. path .. ": " .. err) end
-  return fn()
+  -- local fn, err = load(chunk, "=" .. path)
+  -- if not fn then error("Syntax error in " .. path .. ": " .. err) end
+  return f
 end
 
 --- Case‑insensitive string compare (returns true if equal)
