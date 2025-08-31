@@ -6,11 +6,13 @@ local utils = {}
 --- @return table
 function utils.loadTable(path)
   print("Loading " .. path .. " ...") -- debug
-  local f = io.open(path, "r")
-  if not f then error("Cannot open " .. path) end
-  print(f)
-  local chunk = f:read("*a")
-  f:close()
+  table = require(path) 
+  print("Loaded " .. table) -- debug
+  -- local f = io.open(path, "r")
+  -- if not f then error("Cannot open " .. path) end
+  -- print(f)
+  -- local chunk = f:read("*a")
+  -- f:close()
   local fn, err = load(chunk, "=" .. path)
   if not fn then error("Syntax error in " .. path .. ": " .. err) end
   return fn()
